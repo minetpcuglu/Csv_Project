@@ -59,7 +59,7 @@ namespace Csv_ProjectUI.Services.Concrete
 
         }
 
-        public async Task<IEnumerable<Csv>> TotelAddCsvList()
+        public async Task<IEnumerable<Csv>> TotelAddCsvList() 
         {
             var reader = new StreamReader(File.OpenRead(@"C:\Users\minet\Desktop\asp.net core\Csv_Project\Csv_ProjectUI\ornek_csv\xrtest_1500120_1_1641547130799.csv")); // where <full path to csv> is the file path, of course
 
