@@ -54,8 +54,8 @@ namespace Csv_ProjectUI.Services.Concrete
                 row.created_at = Convert.ToInt64(values[9]);
             }
            
-             var personels = await _collection.FindAsync(x => true).Result.ToListAsync();
-            return personels;
+             var list = await _collection.FindAsync(x => true).Result.ToListAsync();
+            return list;
 
         }
 
