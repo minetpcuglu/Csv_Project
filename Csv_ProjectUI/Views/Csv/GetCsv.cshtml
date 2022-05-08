@@ -1,0 +1,36 @@
+﻿@model List<Csv>
+
+    <table class="table table-bordered">
+        <tr>
+           
+            <td>MainLevel_id</td>
+            <th> XRmean  </th>
+            <th> XRmin </th>
+            <th> XRmax </th>
+            <th> SDNN</th>
+            <th> Rmssd  </th>
+            <th> pNN50  </th>
+            <th> ValueIndex  </th>
+            <th> created_at  </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+            
+                <td>@item.MainLevel_id</td>
+                <td>@item.XRmean</td>
+                <td>@item.XRmin</td>
+                <td>@item.XRmax</td>
+                <td>@item.SDNN</td>
+                <td>@item.Rmssd</td>
+                <td>@item.NN50</td>
+                <td>@item.pNN50</td>
+                <td>@item.ValueIndex</td>
+                <td>@item.created_at</td>
+
+
+            </tr>
+        }
+    </table>
+    <a href="/Csv/AddCsv/" class="btn btn-primary">Add Csv</a>

@@ -1,0 +1,50 @@
+﻿@model Csv
+
+<br />
+<form method="post" asp-controller="Csv" asp-action="AddCsv">
+    <div>
+        <div>
+            <br />
+            <label asp-for="MainLevel_id"> <b>MainLevel_id:</b></label>
+            <input asp-for="MainLevel_id"  class="form-control" />
+            <br />
+            <br />
+            <label asp-for="NN50"> <b>NN50:</b></label>
+            <input asp-for="NN50"  class="form-control" />
+            <br />
+            <br />
+            <label asp-for="pNN50"> <b>pNN50:</b></label>
+            <input asp-for="pNN50"  class="form-control" />
+            <br />
+            <br />
+            <label asp-for="Rmssd"> <b>Rmssd:</b></label>
+            <input asp-for="Rmssd"  class="form-control" />
+            <br />
+            <br />
+            <label asp-for="SDNN"> <b>SDNN:</b></label>
+            <input asp-for="SDNN"  class="form-control" />
+            <br />
+            <br />  <label asp-for="ValueIndex"> <b>ValueIndex:</b></label>
+            <input asp-for="ValueIndex"  class="form-control" />
+            <br />
+            <br />  <label asp-for="XRmax"> <b>XRmax:</b></label>
+            <input asp-for="XRmax"  class="form-control" />
+            <br />
+            <br />  <label asp-for="XRmean"> <b>XRmean:</b></label>
+            <input asp-for="XRmean"  class="form-control" />
+            <br />
+            <br />
+            <br />  <label asp-for="XRmin"> <b>XRmin:</b></label>
+            <input asp-for="XRmin"  class="form-control" />
+            <br />
+            <br />
+            <br />  <label asp-for="created_at"> <b>created_at:</b></label>
+            <input asp-for="created_at"  class="form-control" />
+            <br />
+            <br />
+        </div>
+    </div>
+    <br>
+    <button type="submit" href="/Csv/AddCsv/" class="btn btn-outline-success"><b>Add Csv</b></button>
+    <br />
+</form>
