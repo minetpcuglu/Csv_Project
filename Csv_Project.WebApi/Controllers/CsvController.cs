@@ -23,8 +23,9 @@ namespace Csv_Project.WebApi.Controllers
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetListAll()
         {
-            return Ok(await _csvService.GetCsv());
+            return Ok(await _csvService.GetCsvList());
         }
+
         [HttpPost]
         [Route("AddCsv")]
         [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]

@@ -8,8 +8,8 @@ namespace Csv_ProjectUI.Services.Interface
 {
     public interface ICsvService
     {
-        Task<IEnumerable<Csv>> GetCsv();
-        Task<IEnumerable<Csv>> TotelAddCsv();
+        Task<IEnumerable<Csv>> GetCsvList();
+        Task<IEnumerable<Csv>> TotelAddCsvList();
         Task<Csv> Create(Csv model);
     }
 }
