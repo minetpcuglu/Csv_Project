@@ -13,11 +13,11 @@ namespace Csv_ProjectUI.Controllers
     public class CsvController : Controller
     {
         [HttpGet]
-        public async Task<IActionResult> GetCsv()
+        public async Task<IActionResult> GetCsvList()
         {
             using (var client = new HttpClient())
             {
-                var responseMessage = await client.GetAsync("https://localhost:44356/api/Csv/GetCsv/");
+                var responseMessage = await client.GetAsync("https://localhost:44356/api/Csv/GetCsvList/");
                 var jsonString = await responseMessage.Content.ReadAsStringAsync(); //asenkron olarak karsıla
                 var values = JsonConvert.DeserializeObject<List<Csv>>(jsonString); //listelerken
                 return View(values);

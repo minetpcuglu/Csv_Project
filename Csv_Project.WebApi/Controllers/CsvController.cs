@@ -18,7 +18,7 @@ namespace Csv_Project.WebApi.Controllers
 
 
         [HttpGet]
-        [Route("GetCsv")]
+        [Route("GetCsvList")]
         [ProducesResponseType(typeof(List<Csv>), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetListAll()
