@@ -38,7 +38,7 @@ namespace Csv_ProjectUI.Controllers
             var responseMessage = await client.PostAsync("https://localhost:44356/api/Csv/AddCsv/", content);
             if (responseMessage.IsSuccessStatusCode)
             {
-                return RedirectToAction("GetCsv");
+                return RedirectToAction("GetCsvList");
             }
             ModelState.AddModelError("", "Ekleme işlemi başarısız");
             return View(csv);
